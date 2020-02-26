@@ -1,0 +1,27 @@
+<div class="page-header">
+  <%= link_to roles_path, class: 'btn btn-sm btn-default' do %>
+    <span class="glyphicon glyphicon-list-alt"></span>
+    Volver
+  <% end %>
+  <%= link_to edit_role_path(@role), class: 'btn btn-sm btn-primary' do %>
+    <span class="glyphicon glyphicon-pencil"></span>
+    Editar
+  <% end %>
+  <h4>Ver Rol</h4>
+</div>
+<ol class="breadcrumb">
+  <li>
+    <%= link_to roles_path do %>
+        <%= fa_icon "user", text: "Roles" %>
+    <% end %>
+  </li>
+  <li class="active">
+    Ver Rol
+  </li>
+</ol>
+
+<dl class="dl-horizontal">
+  <dt>Descripción:</dt>
+  <dd><%= @role.descripcion %></dd>
+
+</dl>

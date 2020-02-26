@@ -1,0 +1,19 @@
+<div class="page-header">
+  <%= link_to roles_path, class: 'btn btn-default' do %>
+    <%= fa_icon "list-alt", text: "Volver" %>
+  <% end %>
+  <h4>Nuevo Rol</h4>
+</div>
+<ol class="breadcrumb">
+  <li>
+    <%= link_to roles_path do %>
+        <%= fa_icon "user", text: "Roles" %>
+    <% end %>
+  </li>
+  <li class="active">
+    Nuevo Rol
+  </li>
+</ol>
+
+
+<%= render 'form' %>

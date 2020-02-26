@@ -1,0 +1,12 @@
+<% if user_signed_in? %>
+  <div class="page-header">
+	<h4>Base Rails 5</h4>
+  </div>
+  <ol class="breadcrumb">
+    <li class="active">
+      <%= fa_icon "home", text: "Inicio" %>
+    </li>
+  </ol>
+<% else %>
+	<%= render template: "devise/sessions/new" %>
+<% end %>
