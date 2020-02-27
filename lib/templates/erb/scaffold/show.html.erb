@@ -1,11 +1,11 @@
 <div class="page-header">
-  <%%= link_to <%= index_helper %>_path, class: 'btn btn-default' do %>
-    <%= fa_icon "list-alt", text: "Volver" %>
+  <%%= link_to <%= index_helper %>_path, class: 'btn btn-sm btn-default' do %>
+    <%%= fa_icon "list-alt", text: "Volver" %>
   <%% end %>
-  <%%= link_to edit_<%= singular_table_name %>_path(@<%= singular_table_name %>), class: 'btn btn-primary' do %>
-    <%= fa_icon "edit", text: "Editar" %>
+  <%%= link_to edit_<%= singular_table_name %>_path(@<%= singular_table_name %>), class: 'btn btn-sm btn-primary' do %>
+    <%%= fa_icon "edit", text: "Editar" %>
   <%% end %>
-  <h1>Ver <%= singular_table_name %></h1>
+  <h4>Ver <%= singular_table_name %></h4>
 </div>
 
 <dl class="dl-horizontal">

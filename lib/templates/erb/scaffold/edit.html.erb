@@ -1,9 +1,9 @@
 <div class="page-header">
-  <%%= link_to <%= index_helper %>_path, class: 'btn btn-default' do %>
-    <%= fa_icon "list-alt", text: "Volver" %>
+  <%%= link_to <%= index_helper %>_path, class: 'btn btn-sm btn-default' do %>
+    <%%= fa_icon "list-alt", text: "Volver" %>
   <%% end %>
-  <%%= link_to @<%= singular_table_name %>, class: 'btn btn-primary' do %>
-    <%= fa_icon "info-circle", text: "Ver" %>
+  <%%= link_to @<%= singular_table_name %>, class: 'btn btn-sm btn-primary' do %>
+    <%%= fa_icon "info-circle", text: "Ver" %>
   <%% end %>
   <h4>Editar <%= singular_table_name %></h4>
 </div>
