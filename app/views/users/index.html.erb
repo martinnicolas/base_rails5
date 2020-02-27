@@ -37,13 +37,13 @@
           <td><%= user.sign_in_count %></td>
           <td class="col-md-2 text-center">
             <%= link_to user, class: 'btn btn-sm btn-default' do %>
-              <span class="glyphicon glyphicon-search"></span>
+              <%= fa_icon "search" %>
             <% end %>
             <%= link_to edit_user_path(user), class: 'btn btn-sm btn-default' do %>
-              <span class="glyphicon glyphicon-pencil"></span>
+              <%= fa_icon "edit" %>
             <% end %>
             <%= link_to user, class: 'btn btn-sm btn-danger',method: :delete, data: { confirm: '¿Está seguro?' } do %>
-              <span class="glyphicon glyphicon-trash"></span>
+              <%= fa_icon "trash" %>
             <% end %>
           </td>      
         <% end %>

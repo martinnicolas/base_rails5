@@ -14,8 +14,6 @@
         <th><%= attribute.human_name %></th>
     <% end -%>
         <th></th>
-        <th></th>
-        <th></th>
       </tr>
     </thead>
 
@@ -25,9 +23,17 @@
           <% attributes.each do |attribute| -%>
             <td><%%= <%= singular_table_name %>.<%= attribute.name %> %></td>
           <% end -%>
-          <td><%%= link_to 'Ver', <%= singular_table_name %> %></td>
-          <td><%%= link_to 'Editar', edit_<%= singular_table_name %>_path(<%= singular_table_name %>) %></td>
-          <td><%%= link_to 'Eliminar', <%= singular_table_name %>, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+          <td class="col-md-2 text-center">
+            <%%= link_to <%= singular_table_name %>, class: 'btn btn-sm btn-default' do %>
+              <%= fa_icon "search" %>
+            <% end %>
+            <%%= link_to edit_<%= singular_table_name %>_path(<%= singular_table_name %>), class: 'btn btn-sm btn-default' do %>
+              <%= fa_icon "edit" %>
+            <% end %>
+            <%%= link_to <%= singular_table_name %>, class: 'btn btn-sm btn-danger',method: :delete, data: { confirm: '¿Está seguro?' } do %>
+              <%= fa_icon "trash" %>
+            <% end %>
+          </td>
         <%% end %>
       <%% end %>
     </tbody>

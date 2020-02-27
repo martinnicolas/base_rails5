@@ -1,11 +1,9 @@
 <div class="page-header">
   <%%= link_to <%= index_helper %>_path, class: 'btn btn-default' do %>
-    <span class="glyphicon glyphicon-list-alt"></span>
-    Volver
+    <%= fa_icon "list-alt", text: "Volver" %>
   <%% end %>
   <%%= link_to edit_<%= singular_table_name %>_path(@<%= singular_table_name %>), class: 'btn btn-primary' do %>
-    <span class="glyphicon glyphicon-pencil"></span>
-    Editar
+    <%= fa_icon "edit", text: "Editar" %>
   <%% end %>
   <h1>Ver <%= singular_table_name %></h1>
 </div>

@@ -1,9 +1,8 @@
 <div class="page-header">
   <%%= link_to <%= index_helper %>_path, class: 'btn btn-default' do %>
-    <span class="glyphicon glyphicon-list-alt"></span>
-    Volver
+    <%= fa_icon "list-alt", text: "Volver" %>
   <%% end %>
-  <h1>Nuevo <%= singular_table_name %></h1>
+  <h4>Nuevo <%= singular_table_name %></h4>
 </div>
 
 <%%= render 'form' %>

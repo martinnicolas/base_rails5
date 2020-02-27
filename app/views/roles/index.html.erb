@@ -6,7 +6,7 @@
 </div>
 <ol class="breadcrumb">
   <li class="active">
-    <%= fa_icon "user", text: "Roles" %>
+    <%= fa_icon "universal-access", text: "Roles" %>
   </li>
 </ol>
 
@@ -25,13 +25,13 @@
           <td><%= role.descripcion %></td>
           <td class="col-md-2 text-center">
             <%= link_to role, class: 'btn btn-sm btn-default' do %>
-              <span class="glyphicon glyphicon-search"></span>
+              <%= fa_icon "search" %>
             <% end %>
             <%= link_to edit_role_path(role), class: 'btn btn-sm btn-default' do %>
-              <span class="glyphicon glyphicon-pencil"></span>
+              <%= fa_icon "edit" %>
             <% end %>
             <%= link_to role, class: 'btn btn-sm btn-danger',method: :delete, data: { confirm: '¿Está seguro?' } do %>
-              <span class="glyphicon glyphicon-trash"></span>
+              <%= fa_icon "trash" %>
             <% end %>
           </td>
         <% end %>

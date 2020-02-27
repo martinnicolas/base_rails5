@@ -1,11 +1,9 @@
 <div class="page-header">
   <%%= link_to <%= index_helper %>_path, class: 'btn btn-default' do %>
-    <span class="glyphicon glyphicon-list-alt"></span>
-    Volver
+    <%= fa_icon "list-alt", text: "Volver" %>
   <%% end %>
   <%%= link_to @<%= singular_table_name %>, class: 'btn btn-primary' do %>
-    <span class="glyphicon glyphicon-info-sign"></span>
-    Ver
+    <%= fa_icon "info-circle", text: "Ver" %>
   <%% end %>
   <h4>Editar <%= singular_table_name %></h4>
 </div>
