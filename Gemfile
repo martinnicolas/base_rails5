@@ -88,4 +88,9 @@ gem 'wicked_pdf'
 
 gem 'wkhtmltopdf-binary'
 
+# ---------------------------
+# GEMAS PARA MANEJAR DATEPICKERS
+# ---------------------------
+gem 'jquery-ui-rails'
+
 ruby "2.4.0"
