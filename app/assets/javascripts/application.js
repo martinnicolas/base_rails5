@@ -15,4 +15,6 @@
 //= require jquery-ui
 //= require turbolinks
 //= require bootstrap
+//= require nprogress
+//= require nprogress-turbolinks
 //= require_tree .

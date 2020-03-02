@@ -93,5 +93,10 @@ gem 'wkhtmltopdf-binary'
 # ---------------------------
 gem 'jquery-ui-rails'
 
+# ---------------------------
+# GEMAS PARA MANEJAR TRUBOLINKS PROGRESS BAR
+# ---------------------------
+gem "nprogress-rails"
+
 
 ruby '2.4.0'
