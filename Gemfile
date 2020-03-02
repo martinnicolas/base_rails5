@@ -98,5 +98,10 @@ gem 'jquery-ui-rails'
 # ---------------------------
 gem "nprogress-rails"
 
+# ---------------------------
+# GEMAS PARA MANEJAR SELECT2 
+# ---------------------------
+gem 'select2-rails'
+
 
 ruby '2.4.0'

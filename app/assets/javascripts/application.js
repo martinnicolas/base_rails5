@@ -14,6 +14,8 @@
 //= require jquery_ujs
 //= require jquery-ui
 //= require turbolinks
+//= require select2-full
+//= require select2_locale_es
 //= require bootstrap
 //= require nprogress
 //= require nprogress-turbolinks
