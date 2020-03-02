@@ -55,7 +55,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 # ---------------------------------
 # GEMAS PARA RENOMBRAR PROYECTO
 # ---------------------------------
-gem "rename"
+gem 'rename'
 
 # ---------------------------
 # GEMAS PARA BOOTSTRAP
@@ -67,7 +67,7 @@ gem 'bootstrap-generators', :git => 'git://github.com/decioferreira/bootstrap-ge
 # ---------------------------
 # GEMA PARA FONTAWESOME
 # ---------------------------
-gem "font-awesome-rails"
+gem 'font-awesome-rails'
 
 # ---------------------------
 # GEMAS PARA GESTIÓN DE PERFILES DE USUARIO
@@ -79,7 +79,7 @@ gem 'cancancan'
 # ---------------------------
 # GEMAS PARA PATRON DECORATOR
 # ---------------------------
-gem 'draper' # Para decorators
+gem 'draper'
 
 # ---------------------------
 # GEMAS PARA GENERAR PDFs
@@ -93,4 +93,5 @@ gem 'wkhtmltopdf-binary'
 # ---------------------------
 gem 'jquery-ui-rails'
 
-ruby "2.4.0"
+
+ruby '2.4.0'
