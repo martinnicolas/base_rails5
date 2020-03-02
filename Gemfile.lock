@@ -122,7 +122,8 @@ GEM
       mini_portile2 (~> 2.4.0)
     nprogress-rails (0.2.0.2)
     orm_adapter (0.5.0)
-    puma (3.12.2)
+    puma (4.3.3)
+      nio4r (~> 2.0)
     rack (2.2.2)
     rack-test (0.6.3)
       rack (>= 1.0)
@@ -225,7 +226,7 @@ DEPENDENCIES
   listen (~> 3.0.5)
   mysql2 (>= 0.3.18, < 0.6.0)
   nprogress-rails
-  puma (~> 3.0)
+  puma (~> 4.3)
   rails (~> 5.0.7)
   rename
   sass-rails (~> 5.0)
