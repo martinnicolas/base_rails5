@@ -11,7 +11,7 @@
     </div>
   <% end %>
 
-  <%= render :partial => '/devise/registrations/form' , :locals => {:f => f} %>
+  <%= render partial: "/devise/registrations/form" , locals: {f: f} %>
   
   <%= f.label 'Roles' %>
   <div class="form-group">
@@ -24,7 +24,7 @@
 
   <div class="form-group">
     <div class="col-sm-offset-2 col-sm-10">
-      <%= f.submit :class => "btn btn-sm btn-primary", :value => "Guardar" %>
+      <%= f.submit class: "btn btn-sm btn-primary", data: {disable_with: "Guardando..."}, value: "Guardar" %>
     </div>
   </div>
 
