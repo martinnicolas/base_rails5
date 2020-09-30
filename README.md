@@ -22,10 +22,12 @@ Una vez instalados todos todos los requerimientos ejecutar:
 
 	3- rails g rename:app_to NEW_NAME (Por ejemplo, sistema_nuevo)
 
-	4- rake db:create
+	4- bundle install
 
-	5- rake db:migrate
+	5- rake db:create
 
-	6- rake db:seed
+	6- rake db:migrate
 
-	7- rails s
+	7- rake db:seed
+
+	8- rails s
