@@ -1,5 +1,5 @@
 module ApplicationHelper
-  #Para mostrar el inicio de session desde cualquier controller
+  # Para mostrar el inicio de session desde cualquier controller
   def resource_name
     :user
   end
