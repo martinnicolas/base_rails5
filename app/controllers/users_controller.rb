@@ -6,12 +6,13 @@ class UsersController < ApplicationController
   # GET /users
   # GET /users.json
   def index
-  	@users = User.all
+    @users = User.all
     respond_to do |format|
       format.html
+      format.json { render json: UserDatatable.new(params, view_context: view_context) }
       format.pdf do
-          render pdf: "reporte_users",          
-          template: "users/reporte_users.html.erb"
+        render pdf: 'reporte_users',
+               template: 'users/reporte_users.html.erb'
       end
     end
   end
@@ -64,7 +65,7 @@ class UsersController < ApplicationController
   def destroy
     @user = User.find(params[:id])
     if !@user.roles.empty?
-      UserRole.destroy_all(:user => @user.id)
+      UserRole.destroy_all(user: @user.id)
     end
     @user.destroy
     respond_to do |format|
@@ -74,13 +75,14 @@ class UsersController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_user
-      @user = User.find(params[:id])
-    end
 
-    # Never trust parameters from the scary internet, only allow the white list through.
-    def user_params
-      params.require(:user).permit(:email, :password, :password_confirmation, role_ids: [])
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_user
+    @user = User.find(params[:id])
+  end
+
+  # Never trust parameters from the scary internet, only allow the white list through.
+  def user_params
+    params.require(:user).permit(:email, :password, :password_confirmation, role_ids: [])
+  end
 end

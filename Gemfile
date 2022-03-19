@@ -103,5 +103,17 @@ gem "nprogress-rails"
 # ---------------------------
 gem 'select2-rails'
 
+# ---------------------------
+# GEMAS PARA DATATABLES 
+# ---------------------------
+gem 'ajax-datatables-rails', '1.1.0'
+
+gem 'jquery-datatables'
+
+# ---------------------------
+# GEMAS PARA RUBODCOP 
+# ---------------------------
+gem 'rubocop', '~> 1.12.1', require: false
+
 
 ruby '2.4.0'

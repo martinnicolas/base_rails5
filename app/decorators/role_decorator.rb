@@ -1,4 +1,4 @@
-class RoleDecorator < Draper::Decorator
+class RoleDecorator < ApplicationDecorator
   delegate_all
 
   # Define presentation-specific methods here. Helpers are accessed through

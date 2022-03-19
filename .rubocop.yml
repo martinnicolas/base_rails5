@@ -1,0 +1,106 @@
+AllCops:
+  Exclude:
+    - 'Gemfile'
+    - 'app/helpers/roles_helper.rb'
+    - 'app/controllers/users/*'
+    - 'app/models/ability.rb'
+    - 'bin/*'
+    - 'config/*'
+    - 'config/environments/*'
+    - 'config/initializers/*'
+    - 'config/locales/*'
+    - 'db/*'
+    - 'db/migrate/*'
+    - 'doc/*'
+    - 'extras/*'
+    - 'lib/assets/*'
+    - 'lib/tasks/*'
+    - 'lib/templates/*'
+    - 'lib/templates/rails/jbuilder/index.json.jbuilder'
+    - 'script/*'
+    - 'test/*'
+    - 'test/controllers/*'
+    - 'test/decorators/*'
+    - 'test/fixtures/*'
+    - 'test/functional/*'
+    - 'test/helpers/*'
+    - 'test/integration/*'
+    - 'test/models/*'
+    - 'test/performance/*'
+    - 'test/unit/*'
+    - 'tmp/*'
+    - 'vendor/assets/*'
+    - 'vendor/plugins/*'
+    - 'config.ru'
+
+# Max line in 250 cause of wide screens
+Metrics/LineLength:
+  Max: 250
+
+# Max Mehotd length, 20 lines
+Metrics/MethodLength:
+  Max: 30
+
+# Assignment Branch Condition size
+Metrics/AbcSize:
+  Max: 30
+
+# Ignore redundant return
+Style/RedundantReturn:
+  Enabled: false
+
+# Ignore redundant self
+Style/RedundantSelf:
+  Enabled: false
+
+# Ignore documentation
+Style/Documentation:
+  Enabled: false
+
+# Ignore guarde clause
+Style/GuardClause:
+  Enabled: false    
+
+# Ignore ASCII chars in commments
+Style/AsciiComments:
+  Enabled: false
+
+# Double Negation helps. See app/models/user.rb (37)
+Style/DoubleNegation:
+  Enabled: false  
+
+# CaseEquality (por ahora desactivado)
+Style/CaseEquality:
+  Enabled: false  
+
+# Naming methods (por ahora desactivado)
+Style/AccessorMethodName:
+  Enabled: false
+
+# Unsed method arguments (por ahora desactivado)
+Lint/UnusedMethodArgument:
+  Enabled: false
+
+# Mal evaluada
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+# Aceptamos empty methods
+Style/EmptyMethod:
+  Enabled: false
+
+# No usamos unless por ahora
+Style/NegatedIf:
+  Enabled: false
+
+# No usamos arrays de symbols por ahora
+Style/SymbolArray:
+  Enabled: false
+
+# Por ahora no
+Style/IfUnlessModifier:
+  Enabled: false
+
+# Se quita para poder usar methodos vacios
+Lint/UselessMethodDefinition:
+  Enabled: false

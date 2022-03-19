@@ -14,9 +14,11 @@
 //= require jquery_ujs
 //= require jquery-ui
 //= require turbolinks
+//= require datatables
 //= require select2-full
 //= require select2_locale_es
 //= require bootstrap
 //= require nprogress
 //= require nprogress-turbolinks
+//= require datatables
 //= require_tree .
