@@ -20,4 +20,5 @@
 //= require bootstrap
 //= require nprogress
 //= require nprogress-turbolinks
+//= require datatables
 //= require_tree .

@@ -18,12 +18,7 @@ AllCops:
     - 'lib/templates/*'
     - 'lib/templates/rails/jbuilder/index.json.jbuilder'
     - 'script/*'
-    - 'test/*'
-    - 'test/controllers/*'
-    - 'test/decorators/*'
-    - 'test/fixtures/*'
-    - 'test/functional/*'
-    - 'test/helpers/*'
+    - 'test/test_helper.rb'
     - 'test/integration/*'
     - 'test/models/*'
     - 'test/performance/*'
@@ -34,7 +29,7 @@ AllCops:
     - 'config.ru'
 
 # Max line in 250 cause of wide screens
-Metrics/LineLength:
+Layout/LineLength:
   Max: 250
 
 # Max Mehotd length, 20 lines
@@ -74,7 +69,7 @@ Style/CaseEquality:
   Enabled: false  
 
 # Naming methods (por ahora desactivado)
-Style/AccessorMethodName:
+Naming/AccessorMethodName:
   Enabled: false
 
 # Unsed method arguments (por ahora desactivado)
